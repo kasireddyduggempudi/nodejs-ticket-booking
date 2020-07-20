@@ -13,7 +13,7 @@ const {checkAdmin, checkLogin} = require("./middlewares/authorization");
 
 
 // connecting to mongo
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/ticketbooking", {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(process.env.MONGOLAB_URI || "mongodb://localhost/ticketbooking", {useNewUrlParser: true, useUnifiedTopology: true})
     .then(()=>console.log("successfully connected to mongodb..."))
     .catch(err=>console.log(err));
 
@@ -38,7 +38,7 @@ app.use("/api/admin", checkAdmin, adminRouter);
 
 
 // server creation
-const port = process.ENV || 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, function(){
     console.log(`listening on  port: ${port}`); // es6 feature
 })
