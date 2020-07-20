@@ -1,0 +1,17 @@
+{
+  "name": "bus_reservation",
+  "version": "1.0.0",
+  "description": "Project for ticket booking for a seat in a bus.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DKReddy",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.24"
+  }
+}
