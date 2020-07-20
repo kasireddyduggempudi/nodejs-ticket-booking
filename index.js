@@ -1,3 +1,4 @@
+require('dotenv').config()  // for heroku deployment
 const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
