@@ -12,7 +12,7 @@ const {checkAdmin, checkLogin} = require("./middlewares/authorization");
 
 
 // connecting to mongo
-mongoose.connect("mongodb://localhost/ticketbooking", {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/ticketbooking", {useNewUrlParser: true, useUnifiedTopology: true})
     .then(()=>console.log("successfully connected to mongodb..."))
     .catch(err=>console.log(err));
 
