@@ -4,7 +4,8 @@
   "description": "Project for ticket booking for a seat in a bus.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
   },
   "author": "DKReddy",
   "license": "ISC",
